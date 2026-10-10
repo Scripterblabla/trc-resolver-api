@@ -15,7 +15,7 @@ app.get('/api/bypass', async (req, res) => {
     if (!targetUrl) {
         return res.status(400).json({ 
             status: "error", 
-            message: "Parameter URL tidak boleh kosong!" 
+            message: "Did you Forgot something?" 
         });
     }
 
@@ -28,7 +28,7 @@ app.get('/api/bypass', async (req, res) => {
             serviceType = "Linkvertise";
             // [LOGIKA LINKVERTISE] 
             // Masukkan logika/script bypass Linkvertise di sini jika sudah ada
-            resolvedLink = "https://example.com/hasil-bypass-linkvertise";
+            resolvedLink = "https://linkvertise.com/your-target";
 
         } else if (targetUrl.includes("lootlabs.gg") || targetUrl.includes("loot-link.com")) {
             serviceType = "LootLabs";
